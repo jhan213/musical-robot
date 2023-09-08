@@ -18,15 +18,22 @@ const ThoughtList = ({ thoughts, title }) => {
                 style={{ fontWeight: 700 }}
                 className="text-light"
               >
-                {thought.username}'s thought on {new Date(parseInt(thought.createdAt)).toString()}
+                {thought.username}'s thought on{' '}
+                {new Date(parseInt(thought.createdAt)).toString()}
               </Link>{' '}
             </p>
-            {thought.thought &&
-              <p className="px-2 mt-2">
-                {thought.thought}
+            {/* add thought text */}
+            {thought.thought && <p className="px-2 mt-2">{thought.thought}</p>}
+            {/* add thought image */}
+            {thought.image && (
+              <p className="px-2">
+                <img
+                  className="mt-3 ml-4 thought-image"
+                  src={thought.image}
+                  alt="S3 bucket response"
+                />
               </p>
-            }
-            
+            )}
           </div>
         ))}
     </div>

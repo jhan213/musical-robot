@@ -4,9 +4,10 @@ const params = (fileName) => {
     const myFile = fileName.originalname.split('.');
     const fileType = myFile[myFile.length - 1];
     const imageParams = {
-      Bucket: 'deep_thoughts_bucket',
-      Key: `${uuidv4()}.${fileType}`,
-      Body: fileName.buffer,
+        Bucket: config.bucket,
+        Key: `${uuidv4()}.${fileType}`,
+        Body: fileName.buffer,
+        ACL: 'public-read', // allow read access to this file
     };
     return imageParams;
   };
