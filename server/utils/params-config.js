@@ -1,4 +1,5 @@
 const { v4: uuidv4 } = require('uuid');
+const config = require('../config');
 
 const params = (fileName) => {
     const myFile = fileName.originalname.split('.');

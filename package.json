@@ -17,6 +17,6 @@
     "if-env": "^1.0.4"
   },
   "devDependencies": {
-    "concurrently": "^8.2.1"
+    "concurrently": "^5.1.0"
   }
 }
