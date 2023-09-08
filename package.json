@@ -14,9 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.1453.0",
-    "if-env": "^1.0.4",
-    "uuid": "^9.0.0"
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^8.2.1"
