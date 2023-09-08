@@ -19,6 +19,6 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^8.2.1"
   }
 }
